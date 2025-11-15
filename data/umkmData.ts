@@ -3,7 +3,7 @@ import { UMKM, Category } from '../types';
 export const umkmData: UMKM[] = [
   {
     id: 1,
-    name: "Sate Khas Senayan",
+    name: "Warung Kopi Harlik",
     category: Category.Drink,
     description: "Kopi penuh sejuta kenangan",
     story: "Berdiri sejak 1974, kami berkomitmen menyajikan sate ayam dan kambing kualitas terbaik dengan resep keluarga yang diwariskan turun-temurun. Setiap tusuk sate adalah cerminan dedikasi kami pada rasa otentik Indonesia.",
@@ -12,7 +12,7 @@ export const umkmData: UMKM[] = [
     photos: [
       "https://lh3.googleusercontent.com/gps-cs/AHvCnQyMW0weIyCkarpJG4zp6vNGP3MsBjY1joT2FRmI7akqEamaS_pGLfs5cPHy-SBuCTtcjxz2ONpgGDO-72Mw7jrMTNC_Fp0Nm03ljXLQtNKPSR0WcVMdDmahKj5rpcb9ngPYw2hO=w600-h485-p-k-no",
       "https://lh3.googleusercontent.com/gps-cs/AHvCnQwnEHOBy5rp8ti6Po9ZmqKz3IdHUf5Z0JaoNnXMjGuDPW2IqmwjMejVoFpePSU3vPQOi_hIWiGEoM11Ib3qQX2F6tHka3aXD3LWdttA6lH61Z90KTOtGVLmoDmnhi10Z9CbwAxOkQ=w600-h485-p-k-no",
-      "https://picsum.photos/seed/sate3/800/600",
+      "https://lh3.googleusercontent.com/gps-cs/AHvCnQwnEHOBy5rp8ti6Po9ZmqKz3IdHUf5Z0JaoNnXMjGuDPW2IqmwjMejVoFpePSU3vPQOi_hIWiGEoM11Ib3qQX2F6tHka3aXD3LWdttA6lH61Z90KTOtGVLmoDmnhi10Z9CbwAxOkQ=w600-h485-p-k-no",
       "https://picsum.photos/seed/sate4/800/600"
     ],
     rating: 4.8,
