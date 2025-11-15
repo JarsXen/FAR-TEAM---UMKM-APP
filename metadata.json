@@ -1,0 +1,7 @@
+{
+  "name": "Direktori UMKM FAR TEAM",
+  "description": "A modern and interactive web application to discover and explore local small and medium-sized enterprises (UMKM). Find information, locations, and photo galleries for various local businesses.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
