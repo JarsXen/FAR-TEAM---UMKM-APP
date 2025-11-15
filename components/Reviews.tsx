@@ -58,6 +58,8 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
     }
   };
 
+  const sortedReviews = [...reviews].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
   return (
     <>
       <AnimatePresence>
@@ -133,9 +135,9 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
         </div>
 
         {/* Reviews List */}
-        <div className="space-y-6">
+        <div className="reviews-list max-h-[600px] overflow-y-auto space-y-6 pr-4 -mr-4">
           <AnimatePresence initial={false}>
-            {reviews.map((review) => (
+            {sortedReviews.map((review) => (
               <motion.div
                 key={review.id}
                 layout
@@ -163,7 +165,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
               </motion.div>
             ))}
           </AnimatePresence>
-          {reviews.length === 0 && (
+          {sortedReviews.length === 0 && (
               <div className="text-center py-8 text-white/50">
                   <p>Belum ada ulasan. Jadilah yang pertama!</p>
               </div>
