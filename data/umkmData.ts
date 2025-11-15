@@ -4,28 +4,28 @@ export const umkmData: UMKM[] = [
   {
     id: 1,
     name: "Sate Khas Senayan",
-    category: Category.Food,
-    description: "Sate legendaris dengan bumbu kacang istimewa.",
+    category: Category.Drink,
+    description: "Kopi penuh sejuta kenangan",
     story: "Berdiri sejak 1974, kami berkomitmen menyajikan sate ayam dan kambing kualitas terbaik dengan resep keluarga yang diwariskan turun-temurun. Setiap tusuk sate adalah cerminan dedikasi kami pada rasa otentik Indonesia.",
-    address: "Jl. Pakubuwono VI No.6, RT.9/RW.7, Jakarta Selatan",
+    address: "Jl. Pluit Karang Molek XVI No.32-36, RT.6/RW.2, Pluit, Kecamatan Penjaringan, Jkt Utara, Daerah Khusus Ibukota Jakarta 14450",
     location: { lat: -6.237, lng: 106.789 },
     photos: [
-      "https://picsum.photos/seed/sate1/800/600",
-      "https://picsum.photos/seed/sate2/800/600",
+      "https://lh3.googleusercontent.com/gps-cs/AHvCnQyMW0weIyCkarpJG4zp6vNGP3MsBjY1joT2FRmI7akqEamaS_pGLfs5cPHy-SBuCTtcjxz2ONpgGDO-72Mw7jrMTNC_Fp0Nm03ljXLQtNKPSR0WcVMdDmahKj5rpcb9ngPYw2hO=w600-h485-p-k-no",
+      "https://lh3.googleusercontent.com/gps-cs/AHvCnQwnEHOBy5rp8ti6Po9ZmqKz3IdHUf5Z0JaoNnXMjGuDPW2IqmwjMejVoFpePSU3vPQOi_hIWiGEoM11Ib3qQX2F6tHka3aXD3LWdttA6lH61Z90KTOtGVLmoDmnhi10Z9CbwAxOkQ=w600-h485-p-k-no",
       "https://picsum.photos/seed/sate3/800/600",
       "https://picsum.photos/seed/sate4/800/600"
     ],
     rating: 4.8,
-    operatingHours: "10:00 - 15:10",
+    operatingHours: "08:00 - 22:00",
     contact: {
-      phone: "021-7221-865",
+      phone: "085213085554",
       website: "https://satekhassenayan.com"
     },
     reviews: [
       { id: "1", author: "Budi", rating: 5, comment: "Sate kambingnya juara! Bumbunya meresap sempurna.", date: "2023-10-15" },
       { id: "2", author: "Citra", rating: 4, comment: "Tempatnya nyaman buat kumpul keluarga, sate ayamnya enak.", date: "2023-10-12" }
     ],
-    priceRange: { min: 90000, max: 180000 },
+    priceRange: { min: 4000, max: 10000 },
     tags: ["Makan di Tempat", "Bawa Pulang", "Keluarga"]
   },
   {
