@@ -47,7 +47,7 @@ const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M22 4s-.7 2.1-2 3.4c1.6 1.4 3.3 4.9 3.3 4.9s-1.4.6-2.8.4c-1.4 2.1-3.3 3.4-3.3 3.4s-1.4-.2-2.8-1.1c-1.4 1-2.8 1.1-2.8 1.1s-1.9-1.3-3.3-3.4c-1.4.2-2.8-.4-2.8-.4s1.7-3.5 3.3-4.9c-1.3-1.3-2-3.4-2-3.4s1.4-.2 2.8.6c1.4-1.9 3.3-3.2 3.3-3.2s1.4.4 2.8 1.5c1.4-1.1 2.8-1.5 2.8-1.5z"></path></svg>
 );
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0" {...props}><path d="M16.75 13.96c.25.13.43.2.5.25.13.06.14.01.25-.12.12-.14.13-.25.13-.44 0-.13-.01-.25-.03-.37-.02-.13-.04-.25-.04-.25s-.01-.01 0 0c0-.01.01-.03.01-.03 0 0 0 0 0 0-.01-.02-.01-.03-.02-.04 0 0 0 0 0 0-.01-.02-.02-.03-.03-.04 0 0 0 0 0 0-.01-.01-.02-.03-.03-.04l-.01-.01c-.01-.01-.02-.02-.03-.03 0-.01-.01-.01-.02-.02l-.01-.01c-.01-.01-.02-.02-.03-.03s-.02-.02-.03-.03c-.02-.02-.04-.03-.06-.05 0 0-.01-.01-.01-.01-.43-.25-.86-.5-1.29-.75s-.86-.5-1.29-.75c-.01 0-.01 0-.02-.01l-.01-.01c-.03-.02-.06-.03-.09-.05 0 0-.01 0-.01-.01-.03-.01-.06-.03-.09-.04-.03-.01-.06-.02-.09-.03-.03-.01-.06-.02-.09-.03l-.11-.03c-.03,0-.06-.01-.09-.02s-.06-.01-.09-.01l-.14-.02c-.06,0-.11-.01-.17-.01-.06,0-.11,0-.17.01s-.11.01-.17.02l-.11.02c-.03.01-.06.01-.09.02l-.11.03c-.03.01-.06.02-.09.03-.03.01-.06.02-.09.03-.03.01-.06.03-.09.04-.03.01-.06.02-.09.04s-.06.03-.09.05l-.02.01c-1.38.81-2.75 1.63-4.13 2.44-.13.08-.25.15-.38.23-.13.08-.25.15-.38.23.01-.01.01-.01 0 0-.01 0-.01.01-.02.01l-.01.01c-.01.01-.02.01-.03.02 0 0-.01.01-.01.01s-.02.02-.03.03l-.01.01c-.01.01-.02.02-.03.03 0 0-.01.01-.01.01-.01.01-.02.02-.02.03l-.01.01c-.01.01-.01.02-.02.03l-.01.01c-.01.01-.01.02-.02.03s-.01.02-.02.03l-.01.02c-.01.01-.01.02-.02.03l-.01.02c0 .01-.01.02-.01.03v.01c0 .01-.01.02-.01.03l-.01.04c0 .01-.01.02-.01.03l-.01.04c0 .01,0 .02-.01.03s0 .03-.01.04l-.01.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03l.01.04c0 .01,0 .02.01.03l.01.04c0 .01.01.02.01.03l.01.04c0 .01.01.02.01.03l.01.04c.01.01.01.02.02.03l.01.02c.01.01.01.02.02.03l.01.02c.01.01.02.02.02.03l.01.02c.01.01.02.02.03.03h.01c.01.01.02.02.03.03l.01.01c.01.01.02.02.03.03l.03.03c.01.01.02.01.02.02l.03.03c.02.02.04.03.06.05l.01.01c.13.06.25.13.38.19.13.06.25.13.38.19.68.31 1.38.63 2.06.94.06.03.13.06.19.09.25.13.5.25.75.38.25.13.5.25.75.38.13.06.25.13.38.19.06.03.13.06.19.09s.13.06.19.09c.06.03.13.06.19.09.13.06.25.13.38.19.13.06.25.13.38.19.13.06.25.13.38.19.06.03.13.06.19.09s.13.06.19.09c.06.03.13.06.19.09l.38.19c.06.03.13.06.19.09.06.03.13.06.19.09l.38.19c.06.03.13.06.19.09.13.06.25.13.38.19l.19.09c.06.03.13.06.19.09s.13.06.19.09l.19.09c.06.03.13.06.19.09.13.06.25.13.38.19.13.06.25.13.38.19.13.06.25.13.38.19.01,0,.01,0,.02,0h.01c.12-.06.25-.12.37-.18s.25-.12.37-.18c.01,0,.01,0,.02,0h.01c.12-.06.25-.12.37-.18l.37-.18c.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,ci.w-.25.13-.5.25-.75.37a.1.1 0 00-.03.01.03.03 0 000 .01.03.03 0 00.01.02.04.04 0 00.01.02.04.04 0 00.02.01.04.04 0 00.02.01.05.05 0 00.02.01h.02c.02.01.03.01.05.02a.1.1 0 00.05.02.1.1 0 00.05.01.14.14 0 00.06.01.14.14 0 00.06.01c.06.01.11.01.17.01h.34c.06 0 .11,0 .17-.01.06,0 .11-.01.17-.01.05,0 .1-.01.14-.02a.3.3 0 00.14-.04.3.3 0 00.14-.04.32.32 0 00.14-.06.32.32 0 00.14-.06.32.32 0 00.14-.06.32.32 0 00.14-.06c.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07l.14-.07c.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07a.35.35 0 00.14-.09.35.35 0 00.14-.09c.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1s.09-.06.13-.1c.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.01.03-.03.05-.04a.29.29 0 00.05-.04.29.29 0 00.05-.04.29.29 0 00.05-.04.29.29 0 00.05-.04.28.28 0 00.05-.06.28.28 0 00.05-.06.28.28 0 00.05-.06c.01-.02.03-.04.04-.06a.28.28 0 00.04-.06c.01-.02.03-.04.04-.06a.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.27.27 0 00.03-.08.27.27 0 00.03-.08.27.27 0 00.03-.08c.01-.02.02-.05.03-.08a.27.27 0 00.03-.08c.01-.02.02-.05.03-.08a.27.27 0 00.03-.08.27.27 0 00.03-.08.26.26 0 00.02-.1.26.26 0 00.02-.1.26.26 0 00.02-.1c0-.04.01-.07.02-.1a.26.26 0 00.02-.1.26.26 0 00.02-.1.26.26 0 00.02-.1.25.25 0 00.01-.13.25.25 0 00.01-.13.25.25 0 00.01-.13c0-.04.01-.09.01-.13a.25.25 0 00.01-.13V12a10.06 10.06 0 00-2.01-6.33A10.06 10.06 0 0012 2a10.06 10.06 0 00-6.33 2.01A10.06 10.06 0 002 12a10.06 10.06 0 002.01 6.33A10.06 10.06 0 0012 22Z" /></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="0" {...props}><path d="M16.75 13.96c.25.13.43.2.5.25.13.06.14.01.25-.12.12-.14.13-.25.13-.44 0-.13-.01-.25-.03-.37-.02-.13-.04-.25-.04-.25s-.01-.01 0 0c0-.01.01-.03.01-.03 0 0 0 0 0 0-.01-.02-.01-.03-.02-.04 0 0 0 0 0 0-.01-.02-.02-.03-.03-.04 0 0 0 0 0 0-.01-.01-.02-.03-.03-.04l-.01-.01c-.01-.01-.02-.02-.03-.03 0-.01-.01-.01-.02-.02l-.01-.01c-.01-.01-.02-.02-.03-.03s-.02-.02-.03-.03c-.02-.02-.04-.03-.06-.05 0 0-.01-.01-.01-.01-.43-.25-.86-.5-1.29-.75s-.86-.5-1.29-.75c-.01 0-.01 0-.02-.01l-.01-.01c-.03-.02-.06-.03-.09-.05 0 0-.01 0-.01-.01-.03-.01-.06-.03-.09-.04-.03-.01-.06-.02-.09-.03-.03-.01-.06-.02-.09-.03l-.11-.03c-.03,0-.06-.01-.09-.02s-.06-.01-.09-.01l-.14-.02c-.06,0-.11-.01-.17-.01-.06,0-.11,0-.17.01s-.11.01-.17.02l-.11.02c-.03.01-.06.01-.09.02l-.11.03c-.03.01-.06.02-.09.03-.03.01-.06.02-.09.03-.03.01-.06.03-.09.04-.03.01-.06.02-.09.04s-.06.03-.09.05l-.02.01c-1.38.81-2.75 1.63-4.13 2.44-.13.08-.25.15-.38.23-.13.08-.25.15-.38.23.01-.01.01-.01 0 0-.01 0-.01.01-.02.01l-.01.01c-.01.01-.02.01-.03.02 0 0-.01.01-.01.01s-.02.02-.03.03l-.01.01c-.01.01-.02.02-.03.03 0 0-.01.01-.01.01-.01.01-.02.02-.02.03l-.01.01c-.01.01-.01.02-.02.03l-.01.01c-.01.01-.01.02-.02.03s-.01.02-.02.03l-.01.02c-.01.01-.01.02-.02.03l-.01.02c0 .01-.01.02-.01.03v.01c0 .01-.01.02-.01.03l-.01.04c0 .01-.01.02-.01.03l-.01.04c0 .01,0 .02-.01.03s0 .03-.01.04l-.01.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03v.04c0 .01,0 .02,0 .03l.01.04c0 .01,0 .02.01.03l.01.04c0 .01.01.02.01.03l.01.04c0 .01.01.02.01.03l.01.04c.01.01.01.02.02.03l.01.02c.01.01.01.02.02.03l.01.02c.01.01.02.02.02.03l.01.02c.01.01.02.02.03.03h.01c.01.01.02.02.03.03l.01.01c.01.01.02.02.03.03l.03.03c.01.01.02.01.02.02l.03.03c.02.02.04.03.06.05l.01.01c.13.06.25.13.38.19.13.06.25.13.38.19.68.31 1.38.63 2.06.94.06.03.13.06.19.09.25.13.5.25.75.38.25.13.5.25.75.38.13.06.25.13.38.19.06.03.13.06.19.09s.13.06.19.09c.06.03.13.06.19.09.13.06.25.13.38.19.13.06.25.13.38.19.13.06.25.13.38.19.06.03.13.06.19.09s.13.06.19.09c.06.03.13.06.19.09l.38.19c.06.03.13.06.19.09.06.03.13.06.19.09l.38.19c.06.03.13.06.19.09.13.06.25.13.38.19l.19.09c.06.03.13.06.19.09s.13.06.19.09l.19.09c.06.03.13.06.19.09.13.06.25.13.38.19.13.06.25.13.38.19.13.06.25.13.38.19.01,0,.01,0,.02,0h.01c.12-.06.25-.12.37-.18s.25-.12.37-.18c.01,0,.01,0,.02,0h.01c.12-.06.25-.12.37-.18l.37-.18c.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.12-.06.25-.12.37-.18.01,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,ci.w-.25.13-.5.25-.75.37a.1.1 0 00-.03.01.03.03 0 000 .01.03.03 0 00.01.02.04.04 0 00.01.02.04.04 0 00.02.01.04.04 0 00.02.01.05.05 0 00.02.01h.02c.02.01.03.01.05.02a.1.1 0 00.05.02.1.1 0 00.05.01.14.14 0 00.06.01.14.14 0 00.06.01c.06.01.11.01.17.01h.34c.06 0 .11,0 .17-.01.06,0 .11-.01.17-.01.05,0 .1-.01.14-.02a.3.3 0 00.14-.04.3.3 0 00.14-.04.32.32 0 00.14-.06.32.32 0 00.14-.06.32.32 0 00.14-.06.32.32 0 00.14-.06c.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07l.14-.07c.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07.05-.02.1-.05.14-.07a.35.35 0 00.14-.09.35.35 0 00.14-.09c.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1s.09-.06.13-.1c.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.04-.03.09-.06.13-.1.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.02.04-.03.06-.05.02-.01.03-.03.05-.04a.29.29 0 00.05-.04.29.29 0 00.05-.04.29.29 0 00.05-.04.29.29 0 00.05-.04.28.28 0 00.05-.06.28.28 0 00.05-.06.28.28 0 00.05-.06c.01-.02.03-.04.04-.06a.28.28 0 00.04-.06c.01-.02.03-.04.04-.06a.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.28.28 0 00.04-.06.27.27 0 00.03-.08.27.27 0 00.03-.08.27.27 0 00.03-.08c.01-.02.02-.05.03-.08a.27.27 0 00.03-.08c.01-.02.02-.05.03-.08a.27.27 0 00.03-.08.27.27 0 00.03-.08.26.26 0 00.02-.1.26.26 0 00.02-.1.26.26 0 00.02-.1c0-.04.01-.07.02-.1a.26.26 0 00.02-.1.26.26 0 00.02-.1.26.26 0 00.02-.1.25.25 0 00.01-.13.25.25 0 00.01-.13.25.25 0 00.01-.13c0-.04.01-.09.01-.13a.25.25 0 00.01-.13V12a10.06 10.06 0 00-2.01-6.33A10.06 10.06 0 0012 2a10.06 10.06 0 00-6.33 2.01A10.06 10.06 0 002 12a10.06 10.06 0 002.01 6.33A10.06 10.06 0 0012 22Z" /></svg>
 );
 const HeartIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
@@ -211,21 +211,21 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
   return (
     <>
     <motion.div
-      className="bg-black min-h-screen text-white"
+      className="bg-gray-100 dark:bg-black min-h-screen text-gray-800 dark:text-white transition-colors duration-300"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-black/80 backdrop-blur-xl border-b border-white/10' : 'bg-transparent'
+        scrolled ? 'bg-gray-100/80 dark:bg-black/80 backdrop-blur-xl border-b border-gray-200 dark:border-white/10' : 'bg-transparent'
       }`}>
         <div className="max-w-7xl mx-auto px-6 py-4">
           <button
             onClick={onBack}
-            className="group flex items-center gap-2 text-white/70 hover:text-white transition-all duration-300"
+            className="group flex items-center gap-2 text-gray-600 dark:text-white/70 hover:text-gray-900 dark:hover:text-white transition-all duration-300"
           >
-            <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-white/20 transition-all">
+            <div className="w-8 h-8 rounded-full bg-gray-500/10 dark:bg-white/10 flex items-center justify-center group-hover:bg-gray-500/20 dark:group-hover:bg-white/20 transition-all">
               <XIcon className="w-4 h-4" />
             </div>
             <span className="font-medium">Kembali</span>
@@ -240,7 +240,7 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
             alt={umkm.name}
             className="w-full h-full object-cover scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-gray-100 dark:from-black via-black/30 dark:via-black/50 to-transparent" />
         </div>
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2">
           {umkm.photos.map((_, idx) => (
@@ -257,27 +257,27 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
 
       <div className="relative -mt-20 z-10">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 p-8 mb-8">
+          <div className="bg-white/80 dark:bg-white/5 backdrop-blur-2xl rounded-3xl border border-gray-200 dark:border-white/10 p-8 mb-8 transition-colors duration-300">
             <div className="flex items-center gap-3 mb-3">
               {isTrending && (
                 <div className="flex items-center gap-1.5 px-3 py-1 bg-gradient-to-r from-orange-500/20 to-pink-500/20 rounded-full border border-orange-500/30">
-                  <TrendingUpIcon className="w-3.5 h-3.5 text-orange-400" />
-                  <span className="text-xs font-semibold text-orange-300">Trending</span>
+                  <TrendingUpIcon className="w-3.5 h-3.5 text-orange-500 dark:text-orange-400" />
+                  <span className="text-xs font-semibold text-orange-600 dark:text-orange-300">Trending</span>
                 </div>
               )}
-              <div className="px-3 py-1 bg-white/10 rounded-full border border-white/20">
-                <span className="text-sm font-medium text-white/80">{umkm.category}</span>
+              <div className="px-3 py-1 bg-gray-200 dark:bg-white/10 rounded-full border border-gray-300 dark:border-white/20">
+                <span className="text-sm font-medium text-gray-700 dark:text-white/80">{umkm.category}</span>
               </div>
             </div>
-            <h1 className="text-5xl font-bold text-white mb-3 leading-tight">
+            <h1 className="text-5xl font-bold text-gray-900 dark:text-white mb-3 leading-tight">
               {umkm.name}
             </h1>
             <div className="flex items-center gap-1.5">
               <StarIcon className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-              <span className="text-xl font-bold text-white">{umkm.rating.toFixed(1)}</span>
-              <span className="text-white/50">({umkm.reviews.length} reviews)</span>
+              <span className="text-xl font-bold text-gray-900 dark:text-white">{umkm.rating.toFixed(1)}</span>
+              <span className="text-gray-500 dark:text-white/50">({umkm.reviews.length} reviews)</span>
             </div>
-            <p className="text-lg text-white/70 leading-relaxed my-6">
+            <p className="text-lg text-gray-600 dark:text-white/70 leading-relaxed my-6">
               {umkm.description}
             </p>
             
@@ -286,7 +286,7 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
               <div className="relative inline-block">
                 <button
                   onClick={handleShare}
-                  className="flex items-center gap-2 px-4 py-2 bg-white/10 border border-white/20 rounded-xl text-white/80 hover:bg-white/20 transition-all duration-300"
+                  className="flex items-center gap-2 px-4 py-2 bg-gray-200 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-xl text-gray-700 dark:text-white/80 hover:bg-gray-300 dark:hover:bg-white/20 transition-all duration-300"
                 >
                   <ShareIcon className="w-4 h-4" />
                   <span>Bagikan</span>
@@ -299,32 +299,32 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
                       animate={{ opacity: 1, y: 0, scale: 1 }}
                       exit={{ opacity: 0, y: 10, scale: 0.95 }}
                       transition={{ duration: 0.2, ease: 'easeOut' }}
-                      className="absolute top-full left-0 mt-2 w-48 bg-white/10 backdrop-blur-xl border border-white/20 rounded-xl shadow-lg z-20 overflow-hidden"
+                      className="absolute top-full left-0 mt-2 w-48 bg-white/80 dark:bg-white/10 backdrop-blur-xl border border-gray-200 dark:border-white/20 rounded-xl shadow-lg z-20 overflow-hidden"
                     >
                       <a
                         href={`https://api.whatsapp.com/send?text=${encodeURIComponent(umkm.name + ' - ' + window.location.href)}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 px-4 py-2 text-sm text-white/80 hover:bg-white/20"
+                        className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-white/80 hover:bg-gray-200 dark:hover:bg-white/20"
                       >
-                        <WhatsAppIcon className="w-5 h-5 text-green-400" />
+                        <WhatsAppIcon className="w-5 h-5 text-green-500 dark:text-green-400" />
                         <span>WhatsApp</span>
                       </a>
                       <a
                         href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent('Kunjungi ' + umkm.name + ':')}`}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-3 px-4 py-2 text-sm text-white/80 hover:bg-white/20"
+                        className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-white/80 hover:bg-gray-200 dark:hover:bg-white/20"
                       >
-                        <TwitterIcon className="w-5 h-5 text-sky-400" />
+                        <TwitterIcon className="w-5 h-5 text-sky-500 dark:text-sky-400" />
                         <span>Twitter</span>
                       </a>
                       <button
                         onClick={handleCopyLink}
-                        className="w-full flex items-center gap-3 px-4 py-2 text-sm text-white/80 hover:bg-white/20 disabled:opacity-50"
+                        className="w-full flex items-center gap-3 px-4 py-2 text-sm text-gray-700 dark:text-white/80 hover:bg-gray-200 dark:hover:bg-white/20 disabled:opacity-50"
                         disabled={copied}
                       >
-                        {copied ? <CheckIcon className="w-5 h-5 text-green-400" /> : <LinkIcon className="w-5 h-5" />}
+                        {copied ? <CheckIcon className="w-5 h-5 text-green-500 dark:text-green-400" /> : <LinkIcon className="w-5 h-5" />}
                         <span>{copied ? 'Tautan Disalin!' : 'Salin Tautan'}</span>
                       </button>
                     </motion.div>
@@ -335,8 +335,8 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
                 onClick={onToggleFavorite}
                 className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all duration-300 ${
                     isFavorite
-                        ? 'bg-pink-500/20 border border-pink-500/30 text-pink-300 hover:bg-pink-500/30'
-                        : 'bg-white/10 border border-white/20 text-white/80 hover:bg-white/20'
+                        ? 'bg-pink-500/20 border border-pink-500/30 text-pink-600 dark:text-pink-300 hover:bg-pink-500/30'
+                        : 'bg-gray-200 dark:bg-white/10 border border-gray-300 dark:border-white/20 text-gray-700 dark:text-white/80 hover:bg-gray-300 dark:hover:bg-white/20'
                 }`}
               >
                   <HeartIcon className={`w-4 h-4 transition-all duration-300 ${isFavorite ? 'fill-current' : ''}`} />
@@ -346,45 +346,45 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="group p-5 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="group p-5 bg-white/60 dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/10 hover:bg-white dark:hover:bg-white/10 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500/20 to-pink-500/20 flex items-center justify-center border border-orange-500/30">
-                    <MapPinIcon className="w-5 h-5 text-orange-400" />
+                    <MapPinIcon className="w-5 h-5 text-orange-500 dark:text-orange-400" />
                   </div>
-                  <span className="text-sm font-semibold text-white/50 uppercase tracking-wider">Lokasi</span>
+                  <span className="text-sm font-semibold text-gray-500 dark:text-white/50 uppercase tracking-wider">Lokasi</span>
                 </div>
-                <p className="text-white leading-relaxed">{umkm.address}</p>
+                <p className="text-gray-800 dark:text-white leading-relaxed">{umkm.address}</p>
               </div>
-              <div className="group p-5 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="group p-5 bg-white/60 dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/10 hover:bg-white dark:hover:bg-white/10 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 flex items-center justify-center border border-blue-500/30">
-                    <PhoneIcon className="w-5 h-5 text-blue-400" />
+                    <PhoneIcon className="w-5 h-5 text-blue-500 dark:text-blue-400" />
                   </div>
-                  <span className="text-sm font-semibold text-white/50 uppercase tracking-wider">Telepon</span>
+                  <span className="text-sm font-semibold text-gray-500 dark:text-white/50 uppercase tracking-wider">Telepon</span>
                 </div>
-                <p className="text-white">{umkm.contact.phone}</p>
+                <p className="text-gray-800 dark:text-white">{umkm.contact.phone}</p>
               </div>
               {umkm.priceRange && (
-                <div className="group p-5 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+                <div className="group p-5 bg-white/60 dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/10 hover:bg-white dark:hover:bg-white/10 transition-all duration-300">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-green-500/20 to-teal-500/20 flex items-center justify-center border border-green-500/30">
-                      <PriceTagIcon className="w-5 h-5 text-green-400" />
+                      <PriceTagIcon className="w-5 h-5 text-green-500 dark:text-green-400" />
                     </div>
-                    <span className="text-sm font-semibold text-white/50 uppercase tracking-wider">Rentang Harga</span>
+                    <span className="text-sm font-semibold text-gray-500 dark:text-white/50 uppercase tracking-wider">Rentang Harga</span>
                   </div>
-                  <p className="text-white text-xl font-bold">
+                  <p className="text-gray-900 dark:text-white text-xl font-bold">
                     {`${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(umkm.priceRange.min)} - ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(umkm.priceRange.max)}`}
                   </p>
                 </div>
               )}
-              <div className="group p-5 bg-white/5 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300">
+              <div className="group p-5 bg-white/60 dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/10 hover:bg-white dark:hover:bg-white/10 transition-all duration-300">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500/20 to-pink-500/20 flex items-center justify-center border border-purple-500/30">
-                    <ClockIcon className="w-5 h-5 text-purple-400" />
+                    <ClockIcon className="w-5 h-5 text-purple-500 dark:text-purple-400" />
                   </div>
-                  <span className="text-sm font-semibold text-white/50 uppercase tracking-wider">Jam Buka</span>
+                  <span className="text-sm font-semibold text-gray-500 dark:text-white/50 uppercase tracking-wider">Jam Buka</span>
                 </div>
-                <p className="text-white text-2xl font-bold">{umkm.operatingHours}</p>
+                <p className="text-gray-900 dark:text-white text-2xl font-bold">{umkm.operatingHours}</p>
                 {operatingStatus.text && (
                   <div className={`mt-2 inline-block px-3 py-1 text-sm font-semibold rounded-full ${operatingStatus.color}`}>
                     {operatingStatus.text}
@@ -395,12 +395,12 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
           </div>
           
           {umkm.photos.length > 0 && (
-            <div className="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 p-8 mb-8">
+            <div className="bg-white/80 dark:bg-white/5 backdrop-blur-2xl rounded-3xl border border-gray-200 dark:border-white/10 p-8 mb-8">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/20 to-cyan-500/20 flex items-center justify-center border border-green-500/30">
-                  <CameraIcon className="w-6 h-6 text-green-400" />
+                  <CameraIcon className="w-6 h-6 text-green-500 dark:text-green-400" />
                 </div>
-                <h2 className="text-3xl font-bold text-white">Galeri Foto</h2>
+                <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Galeri Foto</h2>
               </div>
               <div className="relative">
                 <div className="flex overflow-x-auto space-x-4 pb-4 horizontal-gallery">
@@ -423,14 +423,14 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
 
           <Reviews reviews={umkm.reviews} onSubmit={handleAddReview} />
           
-          <div className="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 p-8 mb-8">
+          <div className="bg-white/80 dark:bg-white/5 backdrop-blur-2xl rounded-3xl border border-gray-200 dark:border-white/10 p-8 mb-8">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange-500/20 to-pink-500/20 flex items-center justify-center border border-orange-500/30">
-                <MapPinIcon className="w-6 h-6 text-orange-400" />
+                <MapPinIcon className="w-6 h-6 text-orange-500 dark:text-orange-400" />
               </div>
-              <h2 className="text-3xl font-bold text-white">Peta Lokasi</h2>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Peta Lokasi</h2>
             </div>
-            <div className="rounded-2xl overflow-hidden border border-white/10">
+            <div className="rounded-2xl overflow-hidden border border-gray-200 dark:border-white/10">
               <iframe
                 src={mapSrc}
                 width="100%"
@@ -439,7 +439,7 @@ const UmkmDetail: React.FC<UmkmDetailProps> = ({ umkm, onBack, onUpdateReviews, 
                 allowFullScreen={false}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale-[80%] invert-[100%]"
+                className="dark:grayscale-[80%] dark:invert-[100%]"
                 title={`Peta Lokasi ${umkm.name}`}
               ></iframe>
             </div>
