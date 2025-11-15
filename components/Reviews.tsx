@@ -76,17 +76,17 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
           </motion.div>
         )}
       </AnimatePresence>
-      <div className="bg-white/5 backdrop-blur-2xl rounded-3xl border border-white/10 p-8 mb-8">
+      <div className="bg-white/80 dark:bg-white/5 backdrop-blur-2xl rounded-3xl border border-gray-200 dark:border-white/10 p-8 mb-8">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/20 to-indigo-500/20 flex items-center justify-center border border-purple-500/30">
-            <MessageSquareIcon className="w-6 h-6 text-purple-400" />
+            <MessageSquareIcon className="w-6 h-6 text-purple-500 dark:text-purple-400" />
           </div>
-          <h2 className="text-3xl font-bold text-white">Ulasan Pengguna</h2>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Ulasan Pengguna</h2>
         </div>
         
         {/* Review Form */}
-        <div className="bg-white/5 p-6 rounded-2xl border border-white/10 mb-8">
-          <h3 className="text-xl font-semibold text-white mb-4">Tinggalkan Ulasan Anda</h3>
+        <div className="bg-white/60 dark:bg-white/5 p-6 rounded-2xl border border-gray-200 dark:border-white/10 mb-8">
+          <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Tinggalkan Ulasan Anda</h3>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-4">
               <input
@@ -94,11 +94,11 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
                 placeholder="Nama Anda"
                 value={author}
                 onChange={(e) => setAuthor(e.target.value)}
-                className="w-full sm:w-1/3 bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
+                className="w-full sm:w-1/3 bg-gray-200 dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg px-4 py-2 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 transition"
                 required
               />
               <div className="flex items-center gap-2">
-                <span className="text-white/60">Rating:</span>
+                <span className="text-gray-600 dark:text-white/60">Rating:</span>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
                     <StarIcon
@@ -109,7 +109,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
                       className={`w-6 h-6 cursor-pointer transition-colors ${
                         (hoverRating || rating) >= star
                           ? 'text-yellow-400 fill-yellow-400'
-                          : 'text-white/30 fill-transparent'
+                          : 'text-gray-300 dark:text-white/30 fill-transparent'
                       }`}
                     />
                   ))}
@@ -120,7 +120,7 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
               placeholder="Tulis ulasan Anda di sini..."
               value={comment}
               onChange={(e) => setComment(e.target.value)}
-              className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-2 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 transition h-24 resize-none"
+              className="w-full bg-gray-200 dark:bg-white/5 border border-gray-300 dark:border-white/10 rounded-lg px-4 py-2 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-purple-500 transition h-24 resize-none"
               required
             />
             <button
@@ -145,28 +145,28 @@ const Reviews: React.FC<ReviewsProps> = ({ reviews, onSubmit }) => {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -20, scale: 0.95 }}
                 transition={{ duration: 0.4, ease: 'easeOut' }}
-                className="p-5 bg-white/5 rounded-2xl border border-white/10"
+                className="p-5 bg-white/60 dark:bg-white/5 rounded-2xl border border-gray-200 dark:border-white/10"
               >
                 <div className="flex items-center justify-between mb-2">
-                  <h4 className="font-bold text-white text-lg">{review.author}</h4>
+                  <h4 className="font-bold text-gray-900 dark:text-white text-lg">{review.author}</h4>
                   <div className="flex items-center gap-1">
                     {[...Array(5)].map((_, i) => (
                       <StarIcon
                         key={i}
                         className={`w-4 h-4 ${
-                          i < review.rating ? 'text-yellow-400 fill-yellow-400' : 'text-white/30 fill-transparent'
+                          i < review.rating ? 'text-yellow-400 fill-yellow-400' : 'text-gray-300 dark:text-white/30 fill-transparent'
                         }`}
                       />
                     ))}
                   </div>
                 </div>
-                <p className="text-white/70 leading-relaxed mb-2">{review.comment}</p>
-                <p className="text-xs text-white/40">{new Date(review.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                <p className="text-gray-700 dark:text-white/70 leading-relaxed mb-2">{review.comment}</p>
+                <p className="text-xs text-gray-500 dark:text-white/40">{new Date(review.date).toLocaleDateString('id-ID', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
               </motion.div>
             ))}
           </AnimatePresence>
           {sortedReviews.length === 0 && (
-              <div className="text-center py-8 text-white/50">
+              <div className="text-center py-8 text-gray-500 dark:text-white/50">
                   <p>Belum ada ulasan. Jadilah yang pertama!</p>
               </div>
           )}
