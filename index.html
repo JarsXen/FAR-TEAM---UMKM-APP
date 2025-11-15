@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UMKM APP - FAR TEAM</title>
+    <title>UMKM APP - FARTEAM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -18,6 +18,13 @@
       }
       body {
         font-family: 'Inter', sans-serif;
+        /* Default light mode colors */
+        background-color: #f3f4f6; /* gray-100 */
+        color: #1f2937; /* gray-800 */
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .dark body {
+        /* Dark mode colors */
         background-color: #000000;
         color: #d1d5db; /* text-gray-300 */
       }
@@ -35,57 +42,55 @@
         animation: fadeInUp 0.5s ease-out forwards;
       }
       
-      /* Leaflet Popup Customization to match new theme */
+      /* Leaflet Popup Customization */
       .leaflet-popup-content-wrapper {
         border-radius: 12px;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.4);
-        background-color: rgba(17, 24, 39, 0.8); /* bg-gray-900/80 */
-        color: #d1d5db; /* text-gray-300 */
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #1f2937;
+        border: 1px solid rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
       }
-      .leaflet-popup-content {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 240px !important;
-      }
-      .leaflet-popup-tip {
-        background: rgba(17, 24, 39, 0.8);
-      }
+      .leaflet-popup-content { margin: 0 !important; padding: 0 !important; width: 240px !important; }
+      .leaflet-popup-tip { background: rgba(255, 255, 255, 0.8); }
 
-      /* Custom scrollbar for horizontal gallery */
-      .horizontal-gallery::-webkit-scrollbar {
-          height: 6px;
+      .dark .leaflet-popup-content-wrapper {
+        background-color: rgba(17, 24, 39, 0.8);
+        color: #d1d5db;
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
-      .horizontal-gallery::-webkit-scrollbar-track {
-          background: rgba(255, 255, 255, 0.05);
-          border-radius: 10px;
-      }
-      .horizontal-gallery::-webkit-scrollbar-thumb {
-          background: rgba(255, 255, 255, 0.2);
-          border-radius: 10px;
-      }
-      .horizontal-gallery::-webkit-scrollbar-thumb:hover {
-          background: rgba(255, 255, 255, 0.3);
-      }
+      .dark .leaflet-popup-tip { background: rgba(17, 24, 39, 0.8); }
 
-      /* Custom scrollbar for vertical reviews list */
-      .reviews-list::-webkit-scrollbar {
-          width: 6px;
-      }
-      .reviews-list::-webkit-scrollbar-track {
-          background: rgba(255, 255, 255, 0.05);
-          border-radius: 10px;
-      }
-      .reviews-list::-webkit-scrollbar-thumb {
-          background: rgba(255, 255, 255, 0.2);
-          border-radius: 10px;
-      }
-      .reviews-list::-webkit-scrollbar-thumb:hover {
-          background: rgba(255, 255, 255, 0.3);
-      }
+      /* Custom scrollbar */
+      .horizontal-gallery::-webkit-scrollbar,
+      .reviews-list::-webkit-scrollbar { height: 6px; width: 6px; }
+      .horizontal-gallery::-webkit-scrollbar-track,
+      .reviews-list::-webkit-scrollbar-track { background: rgba(0, 0, 0, 0.05); border-radius: 10px; }
+      .horizontal-gallery::-webkit-scrollbar-thumb,
+      .reviews-list::-webkit-scrollbar-thumb { background: rgba(0, 0, 0, 0.2); border-radius: 10px; }
+      .horizontal-gallery::-webkit-scrollbar-thumb:hover,
+      .reviews-list::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.3); }
+
+      .dark .horizontal-gallery::-webkit-scrollbar-track,
+      .dark .reviews-list::-webkit-scrollbar-track { background: rgba(255, 255, 255, 0.05); }
+      .dark .horizontal-gallery::-webkit-scrollbar-thumb,
+      .dark .reviews-list::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.2); }
+      .dark .horizontal-gallery::-webkit-scrollbar-thumb:hover,
+      .dark .reviews-list::-webkit-scrollbar-thumb:hover { background: rgba(255, 255, 255, 0.3); }
     </style>
+    <script>
+      // Flicker-free dark mode
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      // Configure Tailwind to use class-based dark mode
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
   <script type="importmap">
 {
   "imports": {
@@ -102,7 +107,7 @@
 }
 </script>
 </head>
-  <body class="bg-black">
+  <body>
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>
