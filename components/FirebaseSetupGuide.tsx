@@ -18,36 +18,36 @@ const Step = ({ number, title, description, isLink = false, href = '#' }: { numb
         </div>
         <div>
             {isLink ? (
-                 <a href={href} target="_blank" rel="noopener noreferrer" className="font-semibold text-white hover:text-orange-400 transition-colors flex items-center gap-2">
+                 <a href={href} target="_blank" rel="noopener noreferrer" className="font-semibold text-gray-900 dark:text-white hover:text-orange-500 dark:hover:text-orange-400 transition-colors flex items-center gap-2">
                     {title} <ExternalLinkIcon className="w-4 h-4" />
                 </a>
             ) : (
-                <h3 className="font-semibold text-white">{title}</h3>
+                <h3 className="font-semibold text-gray-900 dark:text-white">{title}</h3>
             )}
            
-            <p className="text-white/60">{description}</p>
+            <p className="text-gray-600 dark:text-white/60">{description}</p>
         </div>
     </li>
 );
 
 const FirebaseSetupGuide: React.FC = () => {
     return (
-        <div className="min-h-screen bg-black text-white flex items-center justify-center p-6 animate-fade-in-up">
-            <div className="max-w-3xl w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-12">
+        <div className="min-h-screen bg-gray-100 dark:bg-black text-gray-800 dark:text-white flex items-center justify-center p-6 animate-fade-in-up transition-colors duration-300">
+            <div className="max-w-3xl w-full bg-white/80 dark:bg-white/5 backdrop-blur-xl border border-gray-200 dark:border-white/10 rounded-3xl p-8 md:p-12">
                 <div className="flex flex-col items-center text-center">
                     <div className="w-16 h-16 flex items-center justify-center bg-red-500/20 rounded-2xl border border-red-500/30 mb-6">
-                        <AlertTriangleIcon className="w-8 h-8 text-red-400" />
+                        <AlertTriangleIcon className="w-8 h-8 text-red-500 dark:text-red-400" />
                     </div>
-                    <h1 className="text-4xl font-bold text-red-400 mb-4">Koneksi Database Gagal</h1>
-                    <p className="text-lg text-white/70 mb-2">
-                        Penyebab: <code className="bg-red-500/20 text-red-300 px-2 py-1 rounded-md text-base">Service firestore is not available</code>
+                    <h1 className="text-4xl font-bold text-red-500 dark:text-red-400 mb-4">Koneksi Database Gagal</h1>
+                    <p className="text-lg text-gray-700 dark:text-white/70 mb-2">
+                        Penyebab: <code className="bg-red-500/20 text-red-600 dark:text-red-300 px-2 py-1 rounded-md text-base">Service firestore is not available</code>
                     </p>
-                    <p className="text-white/60 mb-10 max-w-xl">
+                    <p className="text-gray-600 dark:text-white/60 mb-10 max-w-xl">
                         Ini berarti layanan <strong>Cloud Firestore</strong> belum diaktifkan pada proyek Firebase Anda.
                         Jangan khawatir, ini mudah diperbaiki!
                     </p>
 
-                    <h2 className="text-2xl font-bold text-white mb-8">Ikuti Langkah Berikut:</h2>
+                    <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Ikuti Langkah Berikut:</h2>
 
                     <ol className="text-left space-y-5 max-w-md mx-auto mb-10">
                         <Step 
