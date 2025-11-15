@@ -21,6 +21,13 @@ const MapPinIcon = (props: React.SVGProps<SVGSVGElement>) => (
     </svg>
 );
 
+const NavigationIcon = (props: React.SVGProps<SVGSVGElement>) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+        <polygon points="3 11 22 2 13 21 11 13 3 11" />
+    </svg>
+);
+
+
 const ChevronRightIcon = (props: React.SVGProps<SVGSVGElement>) => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
         <polyline points="9 18 15 12 9 6" />
@@ -51,11 +58,11 @@ const UmkmCard: React.FC<UmkmCardProps> = ({ umkm, onSelect, index, isFavorite, 
   return (
     <div
       onClick={() => onSelect(umkm)}
-      className="group relative cursor-pointer animate-fade-in-up"
+      className="group relative cursor-pointer animate-fade-in-up transition-colors duration-300"
       style={{ animationDelay: `${index * 50}ms` }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-orange-500/10 to-pink-500/10 rounded-3xl blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500" />
-      <div className="relative bg-white/5 backdrop-blur-xl rounded-3xl border border-white/10 overflow-hidden group-hover:border-white/30 group-hover:translate-y-[-4px] transition-all duration-300">
+      <div className="relative bg-white/80 dark:bg-white/5 backdrop-blur-xl rounded-3xl border border-gray-200 dark:border-white/10 overflow-hidden group-hover:border-gray-300 dark:group-hover:border-white/30 group-hover:translate-y-[-4px] transition-all duration-300">
         {/* Image */}
         <div className="relative h-56 overflow-hidden">
           <img
@@ -63,7 +70,7 @@ const UmkmCard: React.FC<UmkmCardProps> = ({ umkm, onSelect, index, isFavorite, 
             alt={umkm.name}
             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
           
           {/* Badges */}
           <div className="absolute top-4 right-4 flex items-center gap-2">
@@ -98,34 +105,43 @@ const UmkmCard: React.FC<UmkmCardProps> = ({ umkm, onSelect, index, isFavorite, 
         <div className="p-6">
           <div className="flex items-center gap-2 mb-3">
             <StarIcon className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            <span className="text-white font-bold">{umkm.rating.toFixed(1)}</span>
-            <span className="text-white/40 text-sm">({umkm.reviews.length} reviews)</span>
+            <span className="text-gray-900 dark:text-white font-bold">{umkm.rating.toFixed(1)}</span>
+            <span className="text-gray-500 dark:text-white/40 text-sm">({umkm.reviews.length} reviews)</span>
           </div>
           
-          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-orange-400 transition-colors truncate">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-500 dark:group-hover:text-orange-400 transition-colors truncate">
             {umkm.name}
           </h3>
           
-          <p className="text-white/60 text-sm mb-4 line-clamp-2 leading-relaxed h-10">
+          <p className="text-gray-600 dark:text-white/60 text-sm mb-4 line-clamp-2 leading-relaxed h-10">
             {umkm.description}
           </p>
           
           {umkm.priceRange && (
             <div className="mb-4">
-              <span className="text-white/60 text-sm">Rentang Harga</span>
-              <p className="font-bold text-lg text-white">
+              <span className="text-gray-500 dark:text-white/60 text-sm">Rentang Harga</span>
+              <p className="font-bold text-lg text-gray-900 dark:text-white">
                 {`${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(umkm.priceRange.min)} - ${new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(umkm.priceRange.max)}`}
               </p>
             </div>
           )}
 
-          <div className="flex items-start gap-2 text-white/50 text-sm">
-            <MapPinIcon className="w-4 h-4 mt-0.5 flex-shrink-0" />
-            <span className="line-clamp-1">{umkm.address}</span>
+          <div className="space-y-2">
+            {umkm.distance !== undefined && (
+                <div className="flex items-start gap-2 text-orange-600 dark:text-orange-400 text-sm">
+                    <NavigationIcon className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                    <span className="font-semibold">{umkm.distance.toFixed(1)} km dari Anda</span>
+                </div>
+            )}
+            <div className="flex items-start gap-2 text-gray-500 dark:text-white/50 text-sm">
+                <MapPinIcon className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span className="line-clamp-1">{umkm.address}</span>
+            </div>
           </div>
 
+
           {/* Hover Arrow */}
-          <div className="flex items-center gap-2 mt-4 text-orange-400 opacity-0 group-hover:opacity-100 transition-all duration-300 h-5">
+          <div className="flex items-center gap-2 mt-4 text-orange-500 dark:text-orange-400 opacity-0 group-hover:opacity-100 transition-all duration-300 h-5">
             <span className="text-sm font-semibold">Lihat Detail</span>
             <ChevronRightIcon className="w-4 h-4" />
           </div>
