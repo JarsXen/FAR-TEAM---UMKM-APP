@@ -180,11 +180,17 @@ const App: React.FC = () => {
           // Gabungkan data Firestore dengan data lokal untuk memastikan semua field ada
           const mergedUmkms = umkmsFromDb.map(dbUmkm => {
             const localUmkm = localDataMap.get(dbUmkm.id);
-            // Jika priceRange tidak ada di data DB, ambil dari data lokal
-            if (localUmkm && !dbUmkm.priceRange) {
-              return { ...dbUmkm, priceRange: localUmkm.priceRange };
-            }
-            return dbUmkm;
+            return {
+                ...(localUmkm || {}), // Use local as a base to get all properties, with empty object fallback
+                ...dbUmkm,            // Override with any data from DB
+                // Explicitly ensure critical array fields are arrays to prevent crashes
+                reviews: dbUmkm.reviews || localUmkm?.reviews || [],
+                photos: (dbUmkm.photos && dbUmkm.photos.length > 0) 
+                    ? dbUmkm.photos 
+                    : (localUmkm?.photos && localUmkm.photos.length > 0
+                        ? localUmkm.photos
+                        : ['https://picsum.photos/seed/placeholder/800/600']),
+            } as UMKM;
           });
 
           setUmkms(mergedUmkms.sort((a, b) => a.id - b.id));
@@ -276,7 +282,7 @@ const App: React.FC = () => {
     const umkmToUpdate = umkms.find(u => u.id === umkmId);
     if (!umkmToUpdate) return;
     
-    const updatedReviews = [newReview, ...umkmToUpdate.reviews];
+    const updatedReviews = [newReview, ...(umkmToUpdate.reviews || [])];
     const newRating = updatedReviews.length > 0
       ? parseFloat((updatedReviews.reduce((acc, r) => acc + r.rating, 0) / updatedReviews.length).toFixed(1))
       : 0;
@@ -301,6 +307,24 @@ const App: React.FC = () => {
                     : umkm
             )
         );
+    }
+  };
+
+  const handleUpdateUmkm = async (updatedUmkm: UMKM) => {
+    if (isFirebaseConnected && db) {
+      const docRef = doc(db, "umkms", updatedUmkm.id.toString());
+      try {
+        const { distance, ...dataToSave } = updatedUmkm;
+        await updateDoc(docRef, { ...dataToSave });
+      } catch (error) {
+        console.error("Gagal memperbarui data UMKM:", error);
+      }
+    } else {
+      setUmkms(prevUmkms =>
+        prevUmkms.map(umkm =>
+          umkm.id === updatedUmkm.id ? updatedUmkm : umkm
+        )
+      );
     }
   };
   
@@ -336,7 +360,8 @@ const App: React.FC = () => {
             <UmkmDetail 
               umkm={selectedUmkm} 
               onBack={handleBack}
-              onUpdateReviews={(newReview) => handleUpdateReviews(selectedUmkm.id, newReview)} 
+              onUpdateReviews={(newReview) => handleUpdateReviews(selectedUmkm.id, newReview)}
+              onUpdateUmkm={handleUpdateUmkm}
               isFavorite={isFavorite(selectedUmkm.id)}
               onToggleFavorite={() => toggleFavorite(selectedUmkm.id)}
             />
