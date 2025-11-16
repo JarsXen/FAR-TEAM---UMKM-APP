@@ -81,12 +81,10 @@ const App: React.FC = () => {
     }
   }, [theme]);
 
-  // Tampilkan halaman panduan jika terjadi error spesifik saat inisialisasi Firebase
   if (isFirebaseConfigValid && firebaseError?.includes('Service firestore is not available')) {
     return <FirebaseSetupGuide />;
   }
 
-  // Geolocation Logic
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
@@ -103,7 +101,6 @@ const App: React.FC = () => {
     }
   }, []);
 
-  // Routing Logic based on URL Hash
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash;
@@ -121,8 +118,7 @@ const App: React.FC = () => {
 
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
-
-  // Favorite Logic
+    
   useEffect(() => {
     try {
         const storedFavorites = localStorage.getItem(FAVORITES_KEY);
@@ -154,7 +150,6 @@ const App: React.FC = () => {
 
   // Firebase Data Fetching
   useEffect(() => {
-    // Jalankan mode online HANYA jika konfigurasi valid DAN db berhasil diinisialisasi
     if (isFirebaseConfigValid && db) {
       setIsFirebaseConnected(true);
       const umkmCollection = collection(db, "umkms");
@@ -199,14 +194,14 @@ const App: React.FC = () => {
       }, (error) => {
         console.error("Error mengambil data dari Firestore: ", error);
         setLoading(false);
-        // Jika ada error (misal: permissions), fallback ke mode lokal dengan data yang ada
+
         setUmkms(umkmData); 
         setIsFirebaseConnected(false);
       });
 
       return () => unsubscribe();
     } else {
-      // Mode Lokal: Konfigurasi Firebase tidak valid atau gagal inisialisasi
+
       setIsFirebaseConnected(false);
       setUmkms(umkmData);
       setLoading(false);
