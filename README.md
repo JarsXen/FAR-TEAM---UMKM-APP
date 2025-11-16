@@ -63,6 +63,7 @@ UMKM dengan interaksi tinggi akan diberi penanda khusus.
 
 ## 🛠️ Teknologi yang Digunakan
 - **React.js**
+- **TypeScript**
 - **Vite**
 - **Tailwind CSS**
 - **Firebase / Firestore**  
