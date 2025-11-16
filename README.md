@@ -62,10 +62,9 @@ UMKM dengan interaksi tinggi akan diberi penanda khusus.
 ---
 
 ## 🛠️ Teknologi yang Digunakan
-
-- **Next.js** — Fullstack React Framework  
-- **React.js**  
-- **Tailwind CSS**  
+- **React.js**
+- **Vite**
+- **Tailwind CSS**
 - **Firebase / Firestore**  
 - **Vercel** — Deployment & hosting  
 - **Geolocation API**
