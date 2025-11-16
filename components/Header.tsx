@@ -20,7 +20,7 @@ const HeaderRoot: React.FC<HeaderProps> = ({ children }) => {
           <SparklesIcon className="w-6 h-6 text-white" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">UMKM Lokal</h1>
+          <h1 className="text-2xl font-bold text-gray-900 dark:text-white transition-colors duration-300">JumpaUMKM</h1>
           <p className="text-sm text-gray-500 dark:text-white/50 transition-colors duration-300">FAR TEAM</p>
         </div>
       </div>
